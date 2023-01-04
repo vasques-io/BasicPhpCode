@@ -10,7 +10,7 @@ $sql = $pdo->prepare("INSERT INTO nomeTabela (nomeColuna, nomeColuna) VALUES (:v
 
 -------------------------------------------------------------------------------------------------------------
 
-Método correto para inserir dados de uma variável dentro de uma query no método (*prepare*):
+Método correto para inserir dados de uma variável numa query no método (*prepare*):
 
 $sql->bindValue(':valor1', $suaVariavelDeDados);
 $sql->bindValue(':valor2', $suaVariavelDeDados);
