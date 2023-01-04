@@ -1,4 +1,10 @@
-Método correto e seguro para preparar uma query *SQL* de inserção no banco de dados mysql usando PDOP:
+Método simples de criar uma conexão com o banco de dados utilizando o PDO:
+
+$pdo = new PDO("mysql:dbname=nomeDoSeuBanco;host=seuIp", "seuNomeDeUsuarioDoBancoDeDados", "senhaDoSeuBancoDeDados");
+
+-------------------------------------------------------------------------------------------------------------
+
+Método correto e seguro para preparar uma query *SQL* de inserção no banco de dados mysql usando PDO:
 
 $sql = $pdo->prepare("INSERT INTO nomeTabela (nomeColuna, nomeColuna) VALUES (:valor1,:valor2)");
 
