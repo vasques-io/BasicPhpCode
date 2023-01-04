@@ -1,0 +1,3 @@
+Método correto e seguro para inserir dados em um banco de dados mysql usando o PDO:
+
+$sql = $pdo->prepare("INSERT INTO nomeTabela (nomeColuna, nomeColuna) VALUES (:valor1,:valor2)");
