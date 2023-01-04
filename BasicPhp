@@ -1,3 +1,13 @@
-Método correto e seguro para inserir dados em um banco de dados mysql usando o PDO:
+Método correto e seguro para preparar uma query *SQL* de inserção no banco de dados mysql usando PDOP:
 
 $sql = $pdo->prepare("INSERT INTO nomeTabela (nomeColuna, nomeColuna) VALUES (:valor1,:valor2)");
+
+-------------------------------------------------------------------------------------------------------------
+
+Método correto para inserir dados de uma variável dentro de uma query no método (*prepare*):
+
+$sql->bindValue(':valor1', $suaVariavelDeDados);
+$sql->bindValue(':valor2', $suaVariavelDeDados);
+
+
+-------------------------------------------------------------------------------------------------------------
